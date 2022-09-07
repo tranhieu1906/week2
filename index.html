@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<button onclick="submit()" >submit</button>
+<script>
+
+    function submit(){
+        var x = document.getElementById("input").value
+        if (x % 4 == 0 && x % 100 != 0){
+            console.log("là năm nhuận")
+        }else if (x % 100 == 0 && x % 400 == 0){
+            console.log("là năm nhuận")
+        }else {
+            console.log("KHÔNG PHẢI là năm nhuận")
+        }
+    }
+
+</script>
+</body>
+</html>
